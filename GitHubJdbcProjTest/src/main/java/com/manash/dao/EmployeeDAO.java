@@ -21,5 +21,9 @@ public class EmployeeDAO {
 		}
 		return result;
 	}
+	
+	public String sayHello() {
+		return "Hii welcome to GitHub";
+	}
 
 }
