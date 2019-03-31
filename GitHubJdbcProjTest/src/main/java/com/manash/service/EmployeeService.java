@@ -12,6 +12,4 @@ public class EmployeeService {
 		int sal=dao.getMaxSal();
 		return sal;
 	}
-	
-
 }

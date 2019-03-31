@@ -9,12 +9,11 @@ import com.manash.utility.ConnUtility;
 
 public class EmployeeDAO {
 	
-	private ConnUtility conn=new ConnUtility();
 	
 	public int getMaxSal() throws SQLException {
 		PreparedStatement ps=null;
 		int result=0;
-		Connection con=conn.getConnecton("jdbc:oracle:thin:@localhost:1521:xe", "system", "manash");
+		Connection con=ConnUtility.getConnecton("jdbc:oracle:thin:@localhost:1521:xe", "system", "manash");
 		ps=con.prepareStatement("select max(sal) from emp");
 		ResultSet rs=ps.executeQuery();
 		while(rs.next()) {

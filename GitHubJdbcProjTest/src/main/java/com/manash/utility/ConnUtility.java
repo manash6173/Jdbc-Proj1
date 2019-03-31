@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class ConnUtility {
 	
-	public Connection getConnecton(String url,String user,String password)throws SQLException {
+	public static Connection getConnecton(String url,String user,String password)throws SQLException {
 		
 		return DriverManager.getConnection(url, user, password);
 	}
