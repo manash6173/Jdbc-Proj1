@@ -7,7 +7,7 @@ import com.manash.dao.EmployeeDAO;
 public class EmployeeService {
 	private EmployeeDAO dao=new EmployeeDAO();
 	
-	public int getEmpHighSal() throws SQLException{
+	public int getEmpHighSal() throws SQLException,Exception{
 		//use dao
 		int sal=dao.getMaxSal();
 		return sal;
